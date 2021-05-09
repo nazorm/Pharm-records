@@ -1,0 +1,35 @@
+@import 'antd/dist/antd.css'; 
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+
+.App{
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  width: 90%;
+  margin: 10% auto;
+}
+.addrecord-form{
+display: flex;
+margin: 10% 0;
+Input{
+ border: transparent;
+ width: 20px;
+}
+}
+.record-card{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  &-delete-icon{
+color: red;
+width: 50px;
+height: 50px;
+.old-price{
+  text-decoration: line-through;
+}
+  }
+  &-edit-icon{
+    width: 50px;
+height: 50px;
+  }
+}
