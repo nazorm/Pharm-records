@@ -1,35 +1,84 @@
-@import 'antd/dist/antd.css'; 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import "antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
 
-
-.App{
-  font-family: 'Cabin', sans-serif;
+.App {
+  font-family: "Cabin", sans-serif;
   text-align: center;
   width: 90%;
   margin: 10% auto;
 }
-.addrecord-form{
-display: flex;
-margin: 10% 0;
-Input{
- border: transparent;
- width: 20px;
+.addrecord-form {
+  margin: 10% 0;
+  .add-input {
+    border-right: transparent;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+  }
+  .add-btn {
+    padding: 10px 20px;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    border-left: transparent;
+    background-color: rgb(68, 127, 214);
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+  }
 }
-}
-.record-card{
+
+.record-card {
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
-  &-delete-icon{
-color: red;
-width: 50px;
-height: 50px;
-.old-price{
-  text-decoration: line-through;
+  border-radius: 5px;
+  border: 0.2px solid rgba(0, 0, 0, 0.2);
+  align-items: center;
+  padding: 10px 5px;
+
+  .old-price {
+    text-decoration: line-through;
+    color: red;
+  }
+  &-delete-icon {
+    color: red;
+    width: 25px;
+    height: 25px;
+    margin: 0 2px;
+    @media only screen and (min-width: 700px) {
+      width: 15px;
+      height: 15px;
+      margin: 0 5px;
+    }
+  }
+  &-edit-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 2px;
+    @media only screen and (min-width: 700px) {
+      width: 15px;
+      height: 15px;
+      margin: 0 5px;
+    }
+  }
+  @media only screen and (min-width: 900px) {
+    padding: 20px;
+  }
 }
-  }
-  &-edit-icon{
-    width: 50px;
-height: 50px;
-  }
+.drug-name,
+.old-price,
+.new-price {
+  padding: 0;
+  border: transparent;
+  background-color: transparent;
+  color: grey;
+  width: 30%;
+}
+.drugname-edit,
+.oldprice-edit,
+.newprice-edit {
+  padding: 0;
+  border: transparent;
+  background-color: transparent;
+  width: 30%;
+  color: black;
 }
