@@ -48,7 +48,7 @@ const date = new Date().toLocaleDateString();
     const fetchRecords = async () => {
       setLoading(true);
       const res = await axios.get(
-        "http://www.mocky.io/v2/5c3e15e63500006e003e9795"
+        "https://www.mocky.io/v2/5c3e15e63500006e003e9795"
       );
       setPharmaRecords(res.data.products);
       setLoading(false);
